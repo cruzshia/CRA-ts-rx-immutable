@@ -1,44 +1,33 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Purpose
 
-In the project directory, you can run:
+In this project, you can learn following tools by simple example:
 
-### `npm start`
+### `Redux-observable`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Using epics as middleware to deal with dispatching actions.<br>
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Examples in src/epics
 
-### `npm test`
+### `Immutablejs with typescipt`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The most complicated part is how to define all state types in store by typescript.<br>
 
-### `npm run build`
+so this example used Record and Record.Factory to customize state types in reducer to validate them.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Examples in src/reducer/commonReducer.tsx<br>
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+and also, here's an example to show how to validate component's props types passed from redux immutable state.<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Examples in src/container/Home/Home.tsx<br>
 
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn Redux-observable, check out the [Redux-observable documentation](https://redux-observable.js.org/).
+
+To learn Typescript, check out the [Typescript documentation](https://www.typescriptlang.org/).
+
+To learn Immutable.js, check out the [ImmutableJs documentation](https://facebook.github.io/immutable-js/).
